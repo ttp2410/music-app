@@ -1,26 +1,18 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="text"]:focus ~ .input-text,
+input[type="text"]:not(:placeholder-shown) ~ .input-text{
+  @apply text-violet-500 transform -translate-y-[26px] -translate-x-10 scale-[0.65];
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.css-1h7e0e4-control{
+  border-color: #111827 !important;
 }
-
-* {
-  box-sizing: border-box;
+.css-qbdosj-Input{
+  color: white !important;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.css-1dimb5e-singleValue{
+  color: white !important;
 }
